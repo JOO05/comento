@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+## 부트캠프 직무 과제
+각 브런치마다 다른 내용이 있습니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### w1
 
-## Available Scripts
+달성 필요한 주요 과업
+- 역할에 따른 폴더 및 파일 구조 셋업
+- React의 기본 Hook(useEffect, useState) 적용
+- React 라이프사이클 이해
+- 상태(State) 업데이트에 따른 내부 컨텐츠 분기 처리
 
-In the project directory, you can run:
+과제 설명
+간단한 자기소개 페이지
+- [Home] 자기소개 내용
+- [Skill] 개발 관련 기술 나열
+- [Contact] 연락처
 
-### `npm start`
+### w2
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+달성 필요한 주요 과업
+- 기본적인 폼(Form) 데이터 관리
+- URL에 따른 컴포넌트 페이지 분기 처리(react-router-dom)
+- HTTP 비동기 통신을 이용한 React 상태 관리
+- LocalStorage를 이용한 데이터 영구 관리
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+과제 설명
+회원가입 & 로그인 페이지 개발
+- 로그인이 성공적으로 완료되면 메인 페이지로 Redirect 필요
+- 받는 토큰 값을 저장해서, 새로고침을 하더라도 로그인 상태가 유지
 
-### `npm test`
+### w3
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+달성 필요한 주요 과업
+- 커스텀 Hook을 통한 상태 관리
+- 웹 기본 페이지네이션 로직 구현
+- Vercel 호스팅을 이용한 웹 배포
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+과제 설명
+QnA 사이트 개발
+- 사용자 컴플레인 리스트 뷰(테이블 형식)
+- 컴플레인 상세 내용 페이지, 답변 작성 및 저장 기능
