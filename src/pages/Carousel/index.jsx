@@ -30,11 +30,16 @@ const Carousel = () => {
   };
 
   // 페이지가 이동할 때마다 작동
+
+  // slideRef의 모든 스타일 속성이 0.5초 동안 부드럽게 변경되도록 만든다.
+  // translateX은 slideRef의 X 축 이동을 설정한다.
+  // currentSlide 값이 변경될 때마다 실행된다.
   useEffect(() => {
     slideRef.current.style.transition = "all 0.5s ease-in-out";
     slideRef.current.style.transform = `translateX(-${currentSlide}00%)`;
   }, [currentSlide]);
 
+  // <S.SlideContainer ref={slideRef}>는 slideRef=<S.SlideContainer />이다.
   return (
     <S.Wrapper>
       <S.Container>
