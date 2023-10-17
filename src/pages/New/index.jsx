@@ -1,9 +1,8 @@
-import axios from 'axios'
 import { useState, useEffect, useRef } from 'react';
 import { Card, Row, Col } from 'react-bootstrap'
 // https://dummyjson.com/docs/products 의 데이터 활용
 
-const New = () => {
+const New = (props) => {
   const [products, setProducts] = useState([])
   const [hasMore, setHasMore] = useState(true)
 
@@ -31,12 +30,11 @@ const New = () => {
   },[products])
 
   async function fetchMoreItems() {
-    const data = await axios(`https://dummyjson.com/products`)
-    if (data.data.products.length===0){
+    if (props.data.length===0){
       setHasMore(false)
       // 받아올 데이터가 없을 시에는 boolean 값 변경
     } else {
-      setProducts(prevProducts => [...prevProducts,...data.data.products])
+      setProducts(prevProducts => [...prevProducts,...props.data])
       // 이전에 있었던 제품과 스크롤을 내리며 새롭게 받아오는 제품들로 products 목록 재생성, 배열 복사 시에 ...을 사용해야지 useState 인식
     }
   }
